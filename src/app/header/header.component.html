@@ -1,0 +1,21 @@
+<header class="header">
+  <div class="header-line">
+    <div class="header-logo">
+      <span class="header-logo__title">{{ title }}</span>
+      <button class="header-logo__btn icon_more"></button>
+    </div>
+    <div class="header-info">
+      <div
+        class="header-info__avatar avatar_circle"
+        *ngFor="let user of users; let i = index"
+      >
+        <img src="{{ user.image }}" alt="{{ user.name }}" />
+      </div>
+      <button class="header-info__btn btn_grey">Share</button>
+      <button class="header-info__btn btn_chat">
+        <i class="icon_chat"></i>Chat
+      </button>
+    </div>
+  </div>
+  <app-menu></app-menu>
+</header>

@@ -1,0 +1,20 @@
+<div class="activity-item">
+	<div class="activity-item__icon">
+		<div class="activity-item__icon-inner icon_{{ getTypeIcon(item.type) }}"></div>
+	</div>
+	<div class="activity-item__text" [ngClass]="{'activity-item__text_quote': item.type === 3}">
+		<p class="paragraph">
+			{{ item.text }}
+		</p>
+		<div class="activity-item__imgs" *ngIf="item.attachments">
+			<div class="activity-item__img" *ngFor="let attachment of item.attachments; let idx = index">
+				<img src="{{ item.attachments[idx] }}" alt="" >
+			</div>
+		</div>	
+	</div>
+	<div class="activity-item__date">
+		<span class="activity-item__date-inner" *ngIf="item.type != 3">
+			{{ item.date | date:'shortTime' }}
+		</span>
+	</div>
+</div>

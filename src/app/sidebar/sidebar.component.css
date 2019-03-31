@@ -1,0 +1,22 @@
+.sidebar-top{
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.sidebar-top__logo{
+	display: flex;
+	align-items: center;
+}
+.sidebar-top__img{
+	margin: 0 13px 0 0;
+}
+.sidebar-top__title{
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.sidebar-top__search-icon{
+
+}

@@ -1,0 +1,20 @@
+<div class="sidebar-info">
+  <div class="sidebar-info__avatar avatar_circle">
+    <img src="{{ user.image }}" alt="{{ user.name }}" />
+  </div>
+  <div class="sidebar-info__data">
+    <div class="sidebar-info__name">{{ user.name }}</div>
+    <div class="sidebar-info__pos">{{ user.position }}</div>
+  </div>
+  <button class="sidebar-info__more icon_more"></button>
+</div>
+<div class="sidebar-stats">
+  <div class="sidebar-stats__col">
+    <div class="sidebar-stats__val">{{ user.completed }}</div>
+    <div class="sidebar-stats__prop">Completed Tasks</div>
+  </div>
+  <div class="sidebar-stats__col">
+    <div class="sidebar-stats__val">{{ user.opened }}</div>
+    <div class="sidebar-stats__prop">Open Tasks</div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.container__inner {
+  width: 96%;
+  max-width: 730px;
+  margin: 0px auto;
+  padding: 35px 30px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.activity-heading {
+  margin: 0;
+  opacity: 0.5;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
