@@ -1,3 +1,4 @@
+import {Routes, RouterModule} from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,6 +11,26 @@ import { ActivityItemComponent } from './pages/activity/activity-item/activity-i
 import { SidebarMenuComponent } from './sidebar/sidebar-menu/sidebar-menu.component';
 import { SidebarUserComponent } from './sidebar/sidebar-user/sidebar-user.component';
 import { SidebarSearchComponent } from './sidebar/sidebar-search/sidebar-search.component';
+import { TaskComponent } from './pages/task/task.component';
+import { HomeComponent } from './pages/home/home.component';
+import { KanbanComponent } from './pages/kanban/kanban.component';
+import { CalendarComponent } from './pages/calendar/calendar.component';
+import { FilesComponent } from './pages/files/files.component';
+import { MyTasksComponent } from './pages/my-tasks/my-tasks.component';
+import { NotificationsComponent } from './pages/notifications/notifications.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+
+const appRoutes: Routes =[
+	{ path: '', component: HomeComponent},
+	{ path: 'task', component: TaskComponent},
+	{ path: 'kanban', component: KanbanComponent},
+	{ path: 'activity', component: ActivityComponent},
+	{ path: 'calendar', component: CalendarComponent},
+	{ path: 'files', component: FilesComponent},
+	{ path: 'my-tasks', component: MyTasksComponent},
+	{ path: 'notifications', component: NotificationsComponent},
+	{ path: '**', component: NotFoundComponent }
+];
 
 @NgModule({
   declarations: [
@@ -22,9 +43,18 @@ import { SidebarSearchComponent } from './sidebar/sidebar-search/sidebar-search.
     SidebarMenuComponent,
     SidebarUserComponent,
     SidebarSearchComponent,
+    TaskComponent,
+    HomeComponent,
+    KanbanComponent,
+    CalendarComponent,
+    FilesComponent,
+    MyTasksComponent,
+    NotificationsComponent,
+    NotFoundComponent,
   ],
   imports: [
-    BrowserModule
+		BrowserModule,
+		RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

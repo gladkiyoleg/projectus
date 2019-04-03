@@ -106,6 +106,8 @@ img{
   width: calc(100% - 270px);
 }
 .container {
+	display: flex;
+	justify-content: center;
   padding: 30px 0 120px;
   background-color: #eeebe5;
   height: 100%;

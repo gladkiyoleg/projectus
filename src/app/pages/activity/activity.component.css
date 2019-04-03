@@ -1,7 +1,6 @@
 .container__inner {
-  width: 96%;
+  width: 100%;
   max-width: 730px;
-  margin: 0px auto;
   padding: 35px 30px;
   border-radius: 8px;
   background-color: #fff;

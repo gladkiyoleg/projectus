@@ -18,7 +18,7 @@
   border-bottom: 2px solid transparent;
   transition: .3s all ease-in-out;
 }
-.h-menu__item_active .h-menu_link,
+.h-menu__item_active,
 .h-menu_link:hover {
   opacity: 1;
   border-color: #ffc200;

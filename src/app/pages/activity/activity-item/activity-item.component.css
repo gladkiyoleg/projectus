@@ -15,7 +15,7 @@
 .activity-item__text {
   display: inline-block;
   width: calc(100% - 119px);
-  padding: 0 96px 0 0;
+  padding: 0 6em 0 0;
 }
 .activity-item__text_quote{
 	padding: 0;
@@ -29,10 +29,11 @@
   padding: 20px 30px;
 }
 .activity-item__imgs{
+	display: flex;
+	flex-wrap: wrap;
 	margin: 20px 0 0 0;
 }
 .activity-item__img {
-	display: inline-block;
 	width: 100%;
 	max-width: 100px;
 	max-height: 100px;
