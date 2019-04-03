@@ -7,7 +7,7 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 	encapsulation: ViewEncapsulation.None
 })
 export class ActivityItemComponent {
-	@Input('item') item: {type: number, text: string, date: any};
+	@Input('item') item: {id: number, body: string, date: any};
 
 	getTypeIcon(type){
 		switch(type) {

@@ -1,6 +1,8 @@
-import {Routes, RouterModule} from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { PostService } from './post.service';
+import {HttpClientModule} from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,17 +22,6 @@ import { MyTasksComponent } from './pages/my-tasks/my-tasks.component';
 import { NotificationsComponent } from './pages/notifications/notifications.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
-const appRoutes: Routes =[
-	{ path: '', component: HomeComponent},
-	{ path: 'task', component: TaskComponent},
-	{ path: 'kanban', component: KanbanComponent},
-	{ path: 'activity', component: ActivityComponent},
-	{ path: 'calendar', component: CalendarComponent},
-	{ path: 'files', component: FilesComponent},
-	{ path: 'my-tasks', component: MyTasksComponent},
-	{ path: 'notifications', component: NotificationsComponent},
-	{ path: '**', component: NotFoundComponent }
-];
 
 @NgModule({
   declarations: [
@@ -54,9 +45,10 @@ const appRoutes: Routes =[
   ],
   imports: [
 		BrowserModule,
-		RouterModule.forRoot(appRoutes)
+		HttpClientModule,
+		AppRoutingModule 
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
