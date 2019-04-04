@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ActivityComponent } from './pages/activity/activity.component';
-import { TaskComponent } from './pages/task/task.component';
+import { TasksComponent } from './pages/tasks/tasks.component';
 import { HomeComponent } from './pages/home/home.component';
 import { KanbanComponent } from './pages/kanban/kanban.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
@@ -12,7 +12,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const appRoutes: Routes =[
 	{ path: '', component: HomeComponent},
-	{ path: 'task', component: TaskComponent},
+	{ path: 'tasks', component: TasksComponent},
 	{ path: 'kanban', component: KanbanComponent},
 	{ path: 'activity', component: ActivityComponent},
 	{ path: 'calendar', component: CalendarComponent},
