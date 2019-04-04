@@ -112,11 +112,25 @@ img{
   background-color: #eeebe5;
   height: 100%;
 }
+.container__inner {
+  width: 100%;
+  max-width: 730px;
+  padding: 35px 30px;
+  border-radius: 8px;
+  background-color: #fff;
+}
 .icon_check {
 	background-color: #cef9c6;
 	background-image: url(../assets/img/i-check.svg);
 	background-position: center center;
 	background-size: 12px 9px;
+	background-repeat: no-repeat;
+}
+.icon_uncheck {
+	background-color: #F9C6CD;
+	background-image: url(../assets/img/i-clear.svg);
+	background-position: center center;
+	background-size: 16px 16px;
 	background-repeat: no-repeat;
 }
 .icon_comment {

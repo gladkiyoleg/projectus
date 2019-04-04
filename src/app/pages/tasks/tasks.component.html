@@ -1,4 +1,3 @@
 <div class="container__inner">
-	<h3 class="activity-heading">{{ title }}</h3>
-	<app-activity-item *ngFor="let post of posts;" [item]="post"></app-activity-item>
+	<app-tasks-item *ngFor="let post of posts; let count = index" [item]="post" [count]="count"></app-tasks-item>
 </div>

@@ -13,7 +13,8 @@ import { ActivityItemComponent } from './pages/activity/activity-item/activity-i
 import { SidebarMenuComponent } from './sidebar/sidebar-menu/sidebar-menu.component';
 import { SidebarUserComponent } from './sidebar/sidebar-user/sidebar-user.component';
 import { SidebarSearchComponent } from './sidebar/sidebar-search/sidebar-search.component';
-import { TaskComponent } from './pages/tasks/tasks.component';
+import { TasksComponent } from './pages/tasks/tasks.component';
+import { TasksItemComponent } from './pages/tasks/tasks-item/tasks-item.component';
 import { HomeComponent } from './pages/home/home.component';
 import { KanbanComponent } from './pages/kanban/kanban.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
@@ -35,6 +36,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     SidebarUserComponent,
     SidebarSearchComponent,
     TasksComponent,
+    TasksItemComponent,
     HomeComponent,
     KanbanComponent,
     CalendarComponent,

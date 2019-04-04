@@ -10,7 +10,7 @@ export class MenuComponent {
   constructor() { }
 
 	menuItems = [
-		{title: 'Task', link: '/task'},
+		{title: 'Tasks', link: '/tasks'},
 		{title: 'Kanban', link: '/kanban'},
 		{title: 'Activity', link: '/activity'},
 		{title: 'Calendar', link: '/calendar'},

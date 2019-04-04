@@ -1,0 +1,10 @@
+<div class="task-item"  *ngIf="count <= 10">
+  <div class="task-item__icon">
+    <div class="task-item__icon-inner icon_{{ getType(item.completed) }}"></div>
+  </div>
+	<div class="task-item__text">
+		<p class="paragraph">
+			{{ item.title }}
+		</p>	
+	</div>
+</div>

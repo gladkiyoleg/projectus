@@ -7,7 +7,6 @@ import { PostService } from '../../post.service';
 	styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
-	title = 'today';
 
 	constructor(private data: PostService) {}
 
